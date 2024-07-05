@@ -391,8 +391,152 @@ i {
 /* ============== main slider section end ============== */
 
 /* ============== flash sales start ============== */
+.new-arrival .heading-navigation .title .subtitle,
+.flash-sales .heading-navigation .title .subtitle {
+    color: #F66BBE;
+}
+.new-arrival .heading-navigation .title .subtitle::before,
+.flash-sales .heading-navigation .title .subtitle::before {
+    content: '';
+    border-width: 2px 8px 2px 8px;
+    border-style: solid;
+    border-color: #f66bbe;
+    border-radius: 2px;
+    margin-right: 10px;
+}
+.countdown p {
+    text-align: center;
+    margin-right: 10px;
+    margin-bottom: 0;
+}
+.bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.flash-buttons button {
+    outline: 0;
+    border: 0;
+    transition: .5s;
+}
+.flash-buttons button:hover {
+    background: #F66BBE !important;
+    color: #fff;
+}
+.countdown p strong {
+    font-size: 24px;
+}
+.countdown .colon {
+    font-weight: bold;
+    font-size: 24px;
+    color: #F66BBE;
+}
+.product-item {
+    transition: all 1s;
+    border: 1px solid transparent;
+    border-radius: 10px !important;
+    padding: 10px;
+}
+.product-item .card-body {
+    padding: 0;
+    border: 1px solid transparent;
+    border-radius: 10px !important;
+}
+.product-item .product-image {
+    background: #F5F5F5;
+    overflow: hidden;
+    position: relative;
+    border-radius: 5px;
+}
+.product-item .product-image img {
+    padding: 32px 42px 20px;
+}
+.product-item .product-image .discount {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    background: #f66bbe;
+    color: #fff;
+    font-size: 12px;
+    padding: 2px 5px;
+    border-radius: 3px;
+}
+.product-item .product-image .favariteView {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    color: #fff;
+    font-size: 12px;
+    padding: 2px 5px;
+    border-radius: 3px;
+}
+.product-item .product-image .favariteView button {
+    padding: 0 5px;
+}
+.product-item .product-image .favariteView button:hover i {
+    transform: scale(1.2);
+    color: #000000;
+    transition: .4s;
+}
+.product-item .product-image .favariteView button i {
+    font-size: 12px;
+}
+.product-item:hover .product-image .add-cart {
+    transform: translateY(0);
+    transition: all .4s;
+}
+.product-item .product-image .add-cart {
+    background: #000000;
+    text-align: center;
+    transform: translateY(100%);
+}
+.product-item .product-image .add-cart button {
+    background: transparent;
+    border: 1px solid transparent;
+    color: #fff;
+    font-size: 14px;
+    padding: 5px 0;
+    text-transform: capitalize;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.product-item .product-content .product-title {
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: 10px;
+    margin-bottom: 8px;
+}
+.product-item .product-content .price {
+    font-size: 14px;
+    font-weight: 700;
+    color: #DB4444;
+    margin-bottom: 8px;
+}
+.product-item .product-content .price del {
+    color: #808080;
+}
+.product-item .product-content .stock-rating {
+    display: flex;
+    font-weight: bold;
+    font-size: 12px;
 
+}
+.product-item .product-content .stock-rating .rating i {
+    margin-right: 0;
+    color: #FFAD33;
+}
+.product-item .product-content .stock-rating .stock {
+    color: #808080;
+    margin-bottom: 0;
+}
 /* ============== flash sales end ============== */
+
+/* ============== new arrival start ============== */
+.shop-link {
+    text-decoration: underline;
+}
+
+/* ============== new arrival end ============== */
 
 
 /* ============== main end ============== */

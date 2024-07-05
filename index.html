@@ -19,9 +19,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
 
-    <!-- Wow js -->
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"> -->
-
     <!-- main-css -->
     <link rel="stylesheet" href="assets/css/style.css">
 
@@ -45,9 +42,6 @@
                     <a href="#"><i class="fa-brands fa-facebook"></i></a>
                     <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
                     <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                    
-                    
-                    
                 </div>
                 <div class="d-flex align-items-center right-side">
                     <div class="login me-5">
@@ -365,13 +359,623 @@
             <div class="container">
                 <div class="heading-navigation">
                     <div class="row">
-                        <div class="col-md-6">
-                            <strong class="subtitle">today's</strong>
-                            <h2 class="heading">Flash Sales</h2>
+                        <div class="col-md-4">
+                            <div class="d-flex justify-content-between">
+                                <div class="title">
+                                    <strong class="subtitle">today's</strong>
+                                    <h2 class="heading fw-bold mt-4 mb-0">Flash Sales</h2>
+                                </div>
+    
+                                <div class="countdown bottom">
+                                    <div id="timer" class="d-flex align-items-center text-capitalize">
+                                        <p> days <br> <strong id="days"></strong> </p>
+                                        <p class="colon">:</p>
+                                        <p> hours <br> <strong id="hours"></strong></p>
+                                        <p class="colon">:</p>
+                                        <p> minutes <br> <strong id="minutes"></strong></p>
+                                        <p class="colon">:</p>
+                                        <p> seconds <br> <strong id="seconds"></strong></p>
+                                    </div>
+                                </div>
 
+                            </div>
                             
                         </div>
-                        <div class="col-md-6"></div>
+                        <div class="col-md-8 bottom">
+                            <div class="flash-buttons text-end">
+                                <button type="button" class="btn bg-light rounded-circle" id="prev"><i class="fa fa-arrow-left me-0"></i></button>
+                                <button type="button" class="btn bg-light rounded-circle"  id="next"><i class="fa fa-arrow-right me-0"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col-md-12">
+                            <div class="card border-0">
+                                <div class="card-body p-0">
+                                    <div class="product-slider">
+                                        <div>
+                                            <div class="card product-item">
+                                                <div class="card-body">
+                                                    <div class="product-image">
+                                                        <img src="assets/images/product.png" class="d-block w-100" alt="image">
+        
+                                                        <div class="add-cart">
+                                                            <button type="button" class="cart-btn">Add To Cart</button>
+                                                        </div>
+                                                        <span class="discount">-30%</span>
+                                                        <div class="favariteView">
+                                                            <button type="button" class="btn bg-white d-block mb-1 rounded-circle"  id="next"><i class="fa-regular fa-heart me-0"></i></button>
+                                                            <button type="button" class="btn d-block bg-white rounded-circle"  id="next"><i class="fa-regular fa-eye me-0"></i></button>
+                                                            
+                                                        </div>
+                
+                                                    </div>
+                                                    <div class="product-content">
+                                                        <p class="product-title">IPS LCD gaming monitor</p>
+                                                        <span class="price">$370 <del class="muted ms-2">$400</del></span>
+                                                        <div class="stock-rating">
+                                                            <div class="rating me-2">
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                            </div>
+                                                            <p class="stock">(99)</p>
+                                                        </div>
+                
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div>
+                                            <div class="card product-item">
+                                                <div class="card-body">
+                                                    <div class="product-image">
+                                                        <img src="assets/images/product.png" class="d-block w-100" alt="image">
+        
+                                                        <div class="add-cart">
+                                                            <button type="button" class="cart-btn">Add To Cart</button>
+                                                        </div>
+                                                        <span class="discount">-30%</span>
+                                                        <div class="favariteView">
+                                                            <button type="button" class="btn bg-white d-block mb-1 rounded-circle"  id="next"><i class="fa-regular fa-heart me-0"></i></button>
+                                                            <button type="button" class="btn d-block bg-white rounded-circle"  id="next"><i class="fa-regular fa-eye me-0"></i></button>
+                                                            
+                                                        </div>
+                
+                                                    </div>
+                                                    <div class="product-content">
+                                                        <p class="product-title">IPS LCD gaming monitor</p>
+                                                        <span class="price">$370 <del class="muted ms-2">$400</del></span>
+                                                        <div class="stock-rating">
+                                                            <div class="rating me-2">
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                            </div>
+                                                            <p class="stock">(99)</p>
+                                                        </div>
+                
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div>
+                                            <div class="card product-item">
+                                                <div class="card-body">
+                                                    <div class="product-image">
+                                                        <img src="assets/images/product.png" class="d-block w-100" alt="image">
+        
+                                                        <div class="add-cart">
+                                                            <button type="button" class="cart-btn">Add To Cart</button>
+                                                        </div>
+                                                        <span class="discount">-30%</span>
+                                                        <div class="favariteView">
+                                                            <button type="button" class="btn bg-white d-block mb-1 rounded-circle"  id="next"><i class="fa-regular fa-heart me-0"></i></button>
+                                                            <button type="button" class="btn d-block bg-white rounded-circle"  id="next"><i class="fa-regular fa-eye me-0"></i></button>
+                                                            
+                                                        </div>
+                
+                                                    </div>
+                                                    <div class="product-content">
+                                                        <p class="product-title">IPS LCD gaming monitor</p>
+                                                        <span class="price">$370 <del class="muted ms-2">$400</del></span>
+                                                        <div class="stock-rating">
+                                                            <div class="rating me-2">
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                            </div>
+                                                            <p class="stock">(99)</p>
+                                                        </div>
+                
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div>
+                                            <div class="card product-item">
+                                                <div class="card-body">
+                                                    <div class="product-image">
+                                                        <img src="assets/images/product.png" class="d-block w-100" alt="image">
+        
+                                                        <div class="add-cart">
+                                                            <button type="button" class="cart-btn">Add To Cart</button>
+                                                        </div>
+                                                        <span class="discount">-30%</span>
+                                                        <div class="favariteView">
+                                                            <button type="button" class="btn bg-white d-block mb-1 rounded-circle"  id="next"><i class="fa-regular fa-heart me-0"></i></button>
+                                                            <button type="button" class="btn d-block bg-white rounded-circle"  id="next"><i class="fa-regular fa-eye me-0"></i></button>
+                                                            
+                                                        </div>
+                
+                                                    </div>
+                                                    <div class="product-content">
+                                                        <p class="product-title">IPS LCD gaming monitor</p>
+                                                        <span class="price">$370 <del class="muted ms-2">$400</del></span>
+                                                        <div class="stock-rating">
+                                                            <div class="rating me-2">
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                            </div>
+                                                            <p class="stock">(99)</p>
+                                                        </div>
+                
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div>
+                                            <div class="card product-item">
+                                                <div class="card-body">
+                                                    <div class="product-image">
+                                                        <img src="assets/images/product.png" class="d-block w-100" alt="image">
+        
+                                                        <div class="add-cart">
+                                                            <button type="button" class="cart-btn">Add To Cart</button>
+                                                        </div>
+                                                        <span class="discount">-30%</span>
+                                                        <div class="favariteView">
+                                                            <button type="button" class="btn bg-white d-block mb-1 rounded-circle"  id="next"><i class="fa-regular fa-heart me-0"></i></button>
+                                                            <button type="button" class="btn d-block bg-white rounded-circle"  id="next"><i class="fa-regular fa-eye me-0"></i></button>
+                                                            
+                                                        </div>
+                
+                                                    </div>
+                                                    <div class="product-content">
+                                                        <p class="product-title">IPS LCD gaming monitor</p>
+                                                        <span class="price">$370 <del class="muted ms-2">$400</del></span>
+                                                        <div class="stock-rating">
+                                                            <div class="rating me-2">
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                            </div>
+                                                            <p class="stock">(99)</p>
+                                                        </div>
+                
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div>
+                                            <div class="card product-item">
+                                                <div class="card-body">
+                                                    <div class="product-image">
+                                                        <img src="assets/images/product.png" class="d-block w-100" alt="image">
+        
+                                                        <div class="add-cart">
+                                                            <button type="button" class="cart-btn">Add To Cart</button>
+                                                        </div>
+                                                        <span class="discount">-30%</span>
+                                                        <div class="favariteView">
+                                                            <button type="button" class="btn bg-white d-block mb-1 rounded-circle"  id="next"><i class="fa-regular fa-heart me-0"></i></button>
+                                                            <button type="button" class="btn d-block bg-white rounded-circle"  id="next"><i class="fa-regular fa-eye me-0"></i></button>
+                                                            
+                                                        </div>
+                
+                                                    </div>
+                                                    <div class="product-content">
+                                                        <p class="product-title">IPS LCD gaming monitor</p>
+                                                        <span class="price">$370 <del class="muted ms-2">$400</del></span>
+                                                        <div class="stock-rating">
+                                                            <div class="rating me-2">
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                            </div>
+                                                            <p class="stock">(99)</p>
+                                                        </div>
+                
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div>
+                                            <div class="card product-item">
+                                                <div class="card-body">
+                                                    <div class="product-image">
+                                                        <img src="assets/images/product.png" class="d-block w-100" alt="image">
+        
+                                                        <div class="add-cart">
+                                                            <button type="button" class="cart-btn">Add To Cart</button>
+                                                        </div>
+                                                        <span class="discount">-30%</span>
+                                                        <div class="favariteView">
+                                                            <button type="button" class="btn bg-white d-block mb-1 rounded-circle"  id="next"><i class="fa-regular fa-heart me-0"></i></button>
+                                                            <button type="button" class="btn d-block bg-white rounded-circle"  id="next"><i class="fa-regular fa-eye me-0"></i></button>
+                                                            
+                                                        </div>
+                
+                                                    </div>
+                                                    <div class="product-content">
+                                                        <p class="product-title">IPS LCD gaming monitor</p>
+                                                        <span class="price">$370 <del class="muted ms-2">$400</del></span>
+                                                        <div class="stock-rating">
+                                                            <div class="rating me-2">
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                            </div>
+                                                            <p class="stock">(99)</p>
+                                                        </div>
+                
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div>
+                                            <div class="card product-item">
+                                                <div class="card-body">
+                                                    <div class="product-image">
+                                                        <img src="assets/images/product.png" class="d-block w-100" alt="image">
+        
+                                                        <div class="add-cart">
+                                                            <button type="button" class="cart-btn">Add To Cart</button>
+                                                        </div>
+                                                        <span class="discount">-30%</span>
+                                                        <div class="favariteView">
+                                                            <button type="button" class="btn bg-white d-block mb-1 rounded-circle"  id="next"><i class="fa-regular fa-heart me-0"></i></button>
+                                                            <button type="button" class="btn d-block bg-white rounded-circle"  id="next"><i class="fa-regular fa-eye me-0"></i></button>
+                                                            
+                                                        </div>
+                
+                                                    </div>
+                                                    <div class="product-content">
+                                                        <p class="product-title">IPS LCD gaming monitor</p>
+                                                        <span class="price">$370 <del class="muted ms-2">$400</del></span>
+                                                        <div class="stock-rating">
+                                                            <div class="rating me-2">
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                            </div>
+                                                            <p class="stock">(99)</p>
+                                                        </div>
+                
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="new-arrival mt-4">
+            <div class="container">
+                <div class="heading-navigation">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="d-flex justify-content-between">
+                                <div class="title">
+                                    <strong class="subtitle">Featured</strong>
+                                    <h2 class="heading fw-bold mt-4 mb-0">New Arrival</h2>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="col-md-8 bottom">
+                            <div class="flash-buttons text-end">
+                                <button type="button" class="btn bg-light rounded-circle" id="prev2"><i class="fa fa-arrow-down me-0"></i></button>
+                                <button type="button" class="btn bg-light rounded-circle"  id="next2"><i class="fa fa-arrow-up me-0"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col-md-4">
+                            <div class="card text-bg-dark">
+                                <img src="assets/images/playstation.png" class="card-img" alt="image">
+                                <div class="card-img-overlay bottom">
+                                    <h5 class="card-title">Play Station 5</h5>
+                                    <p class="card-text">Black and White version of the PS5 coming out on sale.</p>
+                                    <a href="#" class="text-white shop-link">Shop Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="row">
+                                <div class="col-md-12 mb-4">
+                                    <div class="card text-bg-dark">
+                                        <img src="assets/images/women.png" class="card-img" alt="image">
+                                        <div class="card-img-overlay bottom">
+                                            <h5 class="card-title">Women's Collections</h5>
+                                            <p class="card-text">Featured woman collections that give you another vibe.</p>
+                                            <a href="#" class="text-white shop-link">Shop Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="card text-bg-dark">
+                                        <img src="assets/images/speaker.png" class="card-img" alt="image">
+                                        <div class="card-img-overlay bottom">
+                                            <h5 class="card-title">Speakers</h5>
+                                            <p class="card-text">Amazon wireless speakers</p>
+                                            <a href="#" class="text-white shop-link">Shop Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="card text-bg-dark">
+                                        <img src="assets/images/perfume.png" class="card-img" alt="image">
+                                        <div class="card-img-overlay bottom">
+                                            <h5 class="card-title">Perfume</h5>
+                                            <p class="card-text">GUCCI INTENSE OUD EDP</p>
+                                            <a href="#" class="text-white shop-link">Shop Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card border-0">
+                                <div class="card-body p-0">
+                                    <div class="product-slider-2">
+                                        <div>
+                                            <div class="d-flex mb-3">
+                                                <div class="card product-item">
+                                                    <div class="card-body">
+                                                        <div class="product-image">
+                                                            <img src="assets/images/product.png" class="d-block w-100" alt="image">
+            
+                                                            <div class="add-cart">
+                                                                <button type="button" class="cart-btn">Add To Cart</button>
+                                                            </div>
+                                                            <span class="discount">-30%</span>
+                                                            <div class="favariteView">
+                                                                <button type="button" class="btn bg-white d-block mb-1 rounded-circle"  id="next"><i class="fa-regular fa-heart me-0"></i></button>
+                                                                <button type="button" class="btn d-block bg-white rounded-circle"  id="next"><i class="fa-regular fa-eye me-0"></i></button>
+                                                                
+                                                            </div>
+                    
+                                                        </div>
+                                                        <div class="product-content">
+                                                            <p class="product-title">IPS LCD gaming monitor</p>
+                                                            <span class="price">$370 <del class="muted ms-2">$400</del></span>
+                                                            <div class="stock-rating">
+                                                                <div class="rating me-2">
+                                                                    <i class="fa fa-star"></i>
+                                                                    <i class="fa fa-star"></i>
+                                                                    <i class="fa fa-star"></i>
+                                                                    <i class="fa fa-star"></i>
+                                                                    <i class="fa fa-star"></i>
+                                                                </div>
+                                                                <p class="stock">(99)</p>
+                                                            </div>
+                    
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card product-item">
+                                                    <div class="card-body">
+                                                        <div class="product-image">
+                                                            <img src="assets/images/product.png" class="d-block w-100" alt="image">
+            
+                                                            <div class="add-cart">
+                                                                <button type="button" class="cart-btn">Add To Cart</button>
+                                                            </div>
+                                                            <span class="discount">-30%</span>
+                                                            <div class="favariteView">
+                                                                <button type="button" class="btn bg-white d-block mb-1 rounded-circle"  id="next"><i class="fa-regular fa-heart me-0"></i></button>
+                                                                <button type="button" class="btn d-block bg-white rounded-circle"  id="next"><i class="fa-regular fa-eye me-0"></i></button>
+                                                                
+                                                            </div>
+                    
+                                                        </div>
+                                                        <div class="product-content">
+                                                            <p class="product-title">IPS LCD gaming monitor</p>
+                                                            <span class="price">$370 <del class="muted ms-2">$400</del></span>
+                                                            <div class="stock-rating">
+                                                                <div class="rating me-2">
+                                                                    <i class="fa fa-star"></i>
+                                                                    <i class="fa fa-star"></i>
+                                                                    <i class="fa fa-star"></i>
+                                                                    <i class="fa fa-star"></i>
+                                                                    <i class="fa fa-star"></i>
+                                                                </div>
+                                                                <p class="stock">(99)</p>
+                                                            </div>
+                    
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div>
+                                            <div class="d-flex mb-3">
+                                                <div class="card product-item">
+                                                    <div class="card-body">
+                                                        <div class="product-image">
+                                                            <img src="assets/images/product.png" class="d-block w-100" alt="image">
+            
+                                                            <div class="add-cart">
+                                                                <button type="button" class="cart-btn">Add To Cart</button>
+                                                            </div>
+                                                            <span class="discount">-30%</span>
+                                                            <div class="favariteView">
+                                                                <button type="button" class="btn bg-white d-block mb-1 rounded-circle"  id="next"><i class="fa-regular fa-heart me-0"></i></button>
+                                                                <button type="button" class="btn d-block bg-white rounded-circle"  id="next"><i class="fa-regular fa-eye me-0"></i></button>
+                                                                
+                                                            </div>
+                    
+                                                        </div>
+                                                        <div class="product-content">
+                                                            <p class="product-title">IPS LCD gaming monitor</p>
+                                                            <span class="price">$370 <del class="muted ms-2">$400</del></span>
+                                                            <div class="stock-rating">
+                                                                <div class="rating me-2">
+                                                                    <i class="fa fa-star"></i>
+                                                                    <i class="fa fa-star"></i>
+                                                                    <i class="fa fa-star"></i>
+                                                                    <i class="fa fa-star"></i>
+                                                                    <i class="fa fa-star"></i>
+                                                                </div>
+                                                                <p class="stock">(99)</p>
+                                                            </div>
+                    
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card product-item">
+                                                    <div class="card-body">
+                                                        <div class="product-image">
+                                                            <img src="assets/images/product.png" class="d-block w-100" alt="image">
+            
+                                                            <div class="add-cart">
+                                                                <button type="button" class="cart-btn">Add To Cart</button>
+                                                            </div>
+                                                            <span class="discount">-30%</span>
+                                                            <div class="favariteView">
+                                                                <button type="button" class="btn bg-white d-block mb-1 rounded-circle"  id="next"><i class="fa-regular fa-heart me-0"></i></button>
+                                                                <button type="button" class="btn d-block bg-white rounded-circle"  id="next"><i class="fa-regular fa-eye me-0"></i></button>
+                                                                
+                                                            </div>
+                    
+                                                        </div>
+                                                        <div class="product-content">
+                                                            <p class="product-title">IPS LCD gaming monitor</p>
+                                                            <span class="price">$370 <del class="muted ms-2">$400</del></span>
+                                                            <div class="stock-rating">
+                                                                <div class="rating me-2">
+                                                                    <i class="fa fa-star"></i>
+                                                                    <i class="fa fa-star"></i>
+                                                                    <i class="fa fa-star"></i>
+                                                                    <i class="fa fa-star"></i>
+                                                                    <i class="fa fa-star"></i>
+                                                                </div>
+                                                                <p class="stock">(99)</p>
+                                                            </div>
+                    
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div>
+                                            <div class="d-flex mb-3">
+                                                <div class="card product-item">
+                                                    <div class="card-body">
+                                                        <div class="product-image">
+                                                            <img src="assets/images/product.png" class="d-block w-100" alt="image">
+            
+                                                            <div class="add-cart">
+                                                                <button type="button" class="cart-btn">Add To Cart</button>
+                                                            </div>
+                                                            <span class="discount">-30%</span>
+                                                            <div class="favariteView">
+                                                                <button type="button" class="btn bg-white d-block mb-1 rounded-circle"  id="next"><i class="fa-regular fa-heart me-0"></i></button>
+                                                                <button type="button" class="btn d-block bg-white rounded-circle"  id="next"><i class="fa-regular fa-eye me-0"></i></button>
+                                                                
+                                                            </div>
+                    
+                                                        </div>
+                                                        <div class="product-content">
+                                                            <p class="product-title">IPS LCD gaming monitor</p>
+                                                            <span class="price">$370 <del class="muted ms-2">$400</del></span>
+                                                            <div class="stock-rating">
+                                                                <div class="rating me-2">
+                                                                    <i class="fa fa-star"></i>
+                                                                    <i class="fa fa-star"></i>
+                                                                    <i class="fa fa-star"></i>
+                                                                    <i class="fa fa-star"></i>
+                                                                    <i class="fa fa-star"></i>
+                                                                </div>
+                                                                <p class="stock">(99)</p>
+                                                            </div>
+                    
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card product-item">
+                                                    <div class="card-body">
+                                                        <div class="product-image">
+                                                            <img src="assets/images/product.png" class="d-block w-100" alt="image">
+            
+                                                            <div class="add-cart">
+                                                                <button type="button" class="cart-btn">Add To Cart</button>
+                                                            </div>
+                                                            <span class="discount">-30%</span>
+                                                            <div class="favariteView">
+                                                                <button type="button" class="btn bg-white d-block mb-1 rounded-circle"  id="next"><i class="fa-regular fa-heart me-0"></i></button>
+                                                                <button type="button" class="btn d-block bg-white rounded-circle"  id="next"><i class="fa-regular fa-eye me-0"></i></button>
+                                                                
+                                                            </div>
+                    
+                                                        </div>
+                                                        <div class="product-content">
+                                                            <p class="product-title">IPS LCD gaming monitor</p>
+                                                            <span class="price">$370 <del class="muted ms-2">$400</del></span>
+                                                            <div class="stock-rating">
+                                                                <div class="rating me-2">
+                                                                    <i class="fa fa-star"></i>
+                                                                    <i class="fa fa-star"></i>
+                                                                    <i class="fa fa-star"></i>
+                                                                    <i class="fa fa-star"></i>
+                                                                    <i class="fa fa-star"></i>
+                                                                </div>
+                                                                <p class="stock">(99)</p>
+                                                            </div>
+                    
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -446,59 +1050,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-
-    <script> 
-        $(document).ready(function() {
-            let navbar = $('#upside');
-            let stickyThreshold = 1;
-
-            function stickyNavbar() {
-                if ($(window).scrollTop() >= stickyThreshold) {
-                    navbar.addClass("sticky");
-                } else {
-                    navbar.removeClass("sticky");
-                }
-            }
-
-            $(window).on('scroll', function() {
-                stickyNavbar();
-            });
-        });
-
-    </script>
-
-<script>
+    <script src="assets/js/scripts.js"></script>
 
 
-</script>
-    
-    <script>
-        $(document).ready(function() {
-
-            $('.submenu').hover(function() {
-                var $submenu = $(this);
-                var submenuHeight = $submenu.outerHeight();
-                var $secondSubmenu = $submenu.find('.second-submenu');
-                if ($secondSubmenu.find('ul li').length > 0) {
-                    $secondSubmenu.css('height', submenuHeight + 'px');
-                }
-            });
-
-            // featured section slider
-            $('.main-slider').slick({
-                infinite: true,
-                speed: 500,
-                cssEase: 'linear',
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                autoplay: true,
-                autoplaySpeed: 3000,
-                arrows: true,
-                dots: true,
-                pauseOnHover: true,
-            });
-
-        });
-    </script>
 </body>
 </html>
